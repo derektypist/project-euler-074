@@ -10,6 +10,41 @@ It is not difficult to prove that EVERY starting number will eventually get stuc
 
 Starting with 69 produces a chain of five non-repeating terms, but the longest non-repeating chain with a starting number below one million is sixty terms.
 
-How many chains, with a starting number below one million, contain exactly sixty non-repeating terms?
+How many chains, with a starting number below n, contain exactly sixty non-repeating terms?
 
 Information at [Project Euler 074](https://projecteuler.net/problem=74)
+
+## UX
+
+**Getting Started**
+
+In the input field, enter a whole number between 3 and 1000000 (without leading zeros) and select the Submit Button.  Unless you have made an invalid input, you will get the number of chains with a starting number below the number you have entered, contain exactly sixty non-repeating terms.  Select the Reset Button to clear the information or to start again.
+
+**User Stories**
+
+As a user, I expect to get an error message, if I do any of:
+
+- Not enter anything in the input field
+- Entering text other than a number
+- Entering a number less than 3 or greater than 1000000
+- Including leading zeros such as 03
+- Entering a number, but it is not an integer
+
+As a user, if I select the Reset Button, I can clear the information or start again.
+
+As a user, if I enter 2000 and select Submit, I expect the function `digitFactorialChains(2000)` to return a number.
+
+As a user, if I enter 2000 and select Submit, I expect the function `digitFactorialChains(2000)` to return 6.
+
+As a user, if I enter 100000 and select Submit, I expect the function `digitFactorialChains(100000)` to return 42.
+
+As a user, if I enter 500000 and select Submit, I expect the function `digitFactorialChains(500000)` to return 282.
+
+As a user, if I enter 1000000 and select Submit, I expect the function `digitFactorialChains(1000000)` to return 402.
+
+**Information Architecture**
+
+The function `digitFactorialChains(n)` returns a number, where `n` is a number between 3 and 1000000.
+
+
+
