@@ -52,5 +52,13 @@ The function `digitFactorialChains(n)` returns a number, where `n` is a number b
 
 Allows the user to enter a number in order to get the number of chains with a starting number below the number entered, that contain exactly sixty non-repeating terms.  Performs checks on valid input.  If the input is not valid, an error message is displayed.
 
+## Technologies
+
+Uses HTML5, CSS3, JavaScript, Bootstrap 5.3.0-alpha1 and Google Fonts.
+
+## Testing
+
+Ensure all user stories have been met.
+
 
 
