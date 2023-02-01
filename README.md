@@ -42,9 +42,15 @@ As a user, if I enter 500000 and select Submit, I expect the function `digitFact
 
 As a user, if I enter 1000000 and select Submit, I expect the function `digitFactorialChains(1000000)` to return 402.
 
+User Stories on function `digitFactorialChains(n)` taken from [FreeCodeCamp - Coding Interview Prep - Project Euler 074](https://www.freecodecamp.org/learn/coding-interview-prep/project-euler/problem-74-digit-factorial-chains)
+
 **Information Architecture**
 
 The function `digitFactorialChains(n)` returns a number, where `n` is a number between 3 and 1000000.
+
+## Features
+
+Allows the user to enter a number in order to get the number of chains with a starting number below the number entered, that contain exactly sixty non-repeating terms.  Performs checks on valid input.  If the input is not valid, an error message is displayed.
 
 
 
