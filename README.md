@@ -58,7 +58,26 @@ Uses HTML5, CSS3, JavaScript, Bootstrap 5.3.0-alpha1 and Google Fonts.
 
 ## Testing
 
-Ensure all user stories have been met.
+Ensure all user stories have been met.  In the terminal, enter:
+
+    python3 -m http.server
+
+Select Open Preview.  Enter the numbers and select the Submit Button as per user story.  Select the Reset Button to confirm that the information has been cleared.  If any or all of the user stories have not been met, check typing.
+
+## Deployment
+
+Deployed on [GitHub Pages](https://derektypist.github.io/project-euler-074) at the main branch.
+
+## Credits
+
+### Content
+
+Written by me.
+
+### Acknowledgements
+
+- [Project Euler](https://projecteuler.net)
+- [FreeCodeCamp](https://www.freecodecamp.org)
 
 
 
