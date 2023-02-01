@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Euler 074 - Digit Factorial Chains</title>
     <!-- Load Styles -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link href="css/style.css" rel="stylesheet">
 </head>
+
 <body>
     <!-- Set Up Headers -->
     <header class="container-fluid text-center">
@@ -18,13 +21,19 @@
 
     <!-- Set Up Instructions -->
     <section class="container-fluid">
-        <p>The number 145 is well known for the property that the sum of the factorial of its digits is equal to 145: <span class="terms">1! + 4! + 5! = 1 + 24 + 120 = 145</span></p>
-        <p>Perhaps less well known is 169, in that it produces the longest chain of numbers that link back to 169; it turns out that there are only three such loops that exist:</p>
-        <p><span class="terms">169 &rarr; 363601 &rarr; 1454 &rarr; 169, 871 &rarr; 45361 &rarr; 871, 872 &rarr; 45362 &rarr; 872</span></p>
-        <p>It is not difficult to prove that EVERY starting number will eventually get stuck in a loop.  For example:</p>
-        <p><span class="terms">69 &rarr; 363600 &rarr; 1454 &rarr; 169 &rarr; 363601 (&rarr; 1454), 78 &rarr; 45360 &rarr; 871 &rarr; 45361 (&rarr; 871), 540 &rarr; 145 (&rarr; 145)</span></p>
-        <p>Starting with 69 produces a chain of five non-repeating terms, but the longest non-repeating chain with a starting number below one million is sixty terms.</p>
-        <p>How many chains, with a starting number below n, contain exactly sixty non-repeating terms?  Begin by entering a number.</p>
+        <p>The number 145 is well known for the property that the sum of the factorial of its digits is equal to 145:
+            <span class="terms">1! + 4! + 5! = 1 + 24 + 120 = 145</span></p>
+        <p>Perhaps less well known is 169, in that it produces the longest chain of numbers that link back to 169; it
+            turns out that there are only three such loops that exist:</p>
+        <p><span class="terms">169 &rarr; 363601 &rarr; 1454 &rarr; 169, 871 &rarr; 45361 &rarr; 871, 872 &rarr; 45362
+                &rarr; 872</span></p>
+        <p>It is not difficult to prove that EVERY starting number will eventually get stuck in a loop. For example:</p>
+        <p><span class="terms">69 &rarr; 363600 &rarr; 1454 &rarr; 169 &rarr; 363601 (&rarr; 1454), 78 &rarr; 45360
+                &rarr; 871 &rarr; 45361 (&rarr; 871), 540 &rarr; 145 (&rarr; 145)</span></p>
+        <p>Starting with 69 produces a chain of five non-repeating terms, but the longest non-repeating chain with a
+            starting number below one million is sixty terms.</p>
+        <p>How many chains, with a starting number below n, contain exactly sixty non-repeating terms? Begin by entering
+            a number.</p>
     </section>
 
     <!-- Set Up Form -->
@@ -33,7 +42,9 @@
             <!-- Set Up Label and Input -->
             <article class="mb-3">
                 <label for="mynumber" class="form-label">Number (Required)</label>
-                <input class="form-control" placeholder="Enter whole number between 3 and 1000000 (without leading zeros)" title="Enter whole number between 3 and 1000000 (without leading zeros)" id="mynumber">
+                <input class="form-control"
+                    placeholder="Enter whole number between 3 and 1000000 (without leading zeros)"
+                    title="Enter whole number between 3 and 1000000 (without leading zeros)" id="mynumber">
             </article>
 
             <!-- Set Up and Center Buttons -->
@@ -50,4 +61,5 @@
         <script src="js/script.js"></script>
     </section>
 </body>
+
 </html>
