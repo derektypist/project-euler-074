@@ -5,7 +5,7 @@ function getNumberInfo() {
     // Get the Value of the Input Field
     let num = document.getElementById("mynumber").value;
     // Check if input is valid
-    if (isNaN(num) || num.length==0 || num<3 || num>1000000 || (num.length>1 && num[0]=="0") || !Number.isInteger(Number(num))) {
+    if (isNaN(num) || num.length == 0 || num < 3 || num > 1000000 || (num.length > 1 && num[0] == "0") || !Number.isInteger(Number(num))) {
         txt += `Invalid Input.  Please enter a whole number between 3 and 1000000.  Do not include leading zeros.`;
     } else {
         txt += `You have entered the number ${num}.<p>`;
@@ -29,14 +29,14 @@ function digitFactorialChains(n) {
         let sum = 0;
         while (number > 0) {
             sum += factorials[number % 10];
-            number = Math.floor(number/10);
+            number = Math.floor(number / 10);
         }
         return sum;
     }
 
     const factorials = [1];
-    for (let i=1;i<10;i++) {
-        factorials.push(factorials[factorials.length-1]*i);
+    for (let i = 1; i < 10; i++) {
+        factorials.push(factorials[factorials.length - 1] * i);
     }
 
     const sequences = {
@@ -50,7 +50,7 @@ function digitFactorialChains(n) {
     };
 
     let result = 0;
-    for (let i=2;i<n;i++) {
+    for (let i = 2; i < n; i++) {
         let curNum = i;
         let chainLength = 0;
         let curSequence = [];
@@ -65,10 +65,16 @@ function digitFactorialChains(n) {
         }
 
         if (chainLength === 60) result++;
-        for (let j=1;j<curSequence.length;j++) {
+        for (let j = 1; j < curSequence.length; j++) {
             sequences[curSequence[j]] = chainLength - j;
         }
     }
 
     return result;
+}
+
+// Function to Clear Information
+function clearInfo() {
+    let txt = "";
+    document.getElementById("numinfo").innerHTML = txt;
 }
