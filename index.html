@@ -10,6 +10,21 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-    
+    <!-- Set Up Headers -->
+    <header class="container-fluid text-center">
+        <h1>Project Euler 074</h1>
+        <h2>Digit Factorial Chains</h2>
+    </header>
+
+    <!-- Set Up Instructions -->
+    <section class="container-fluid">
+        <p>The number 145 is well known for the property that the sum of the factorial of its digits is equal to 145: <span class="terms">1! + 4! + 5! = 1 + 24 + 120 = 145</span></p>
+        <p>Perhaps less well known is 169, in that it produces the longest chain of numbers that link back to 169; it turns out that there are only three such loops that exist:</p>
+        <p><span class="terms">169 &rarr; 363601 &rarr; 1454 &rarr; 169, 871 &rarr; 45361 &rarr; 871, 872 &rarr; 45362 &rarr; 872</span></p>
+        <p>It is not difficult to prove that EVERY starting number will eventually get stuck in a loop.  For example:</p>
+        <p><span class="terms">69 &rarr; 363600 &rarr; 1454 &rarr; 169 &rarr; 363601 (&rarr; 1454), 78 &rarr; 45360 &rarr; 871 &rarr; 45361 (&rarr; 871), 540 &rarr; 145 (&rarr; 145)</span></p>
+        <p>Starting with 69 produces a chain of five non-repeating terms, but the longest non-repeating chain with a starting number below one million is sixty terms.</p>
+        <p>How many chains, with a starting number below n, contain exactly sixty non-repeating terms?  Begin by entering a number.</p>
+    </section>
 </body>
 </html>
